@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+<title id="title">A blood donation illustration</title>
+<desc id="desc">A red blood drop beside a bandage and a heart symbol.</desc>
+<rect width="1200" height="520" rx="24" fill="#fff0e4"/>
+<circle cx="930" cy="130" r="76" fill="#ffd7a1"/>
+<circle cx="1010" cy="350" r="110" fill="#f5c8c0"/>
+<path d="M300 112C240 205 180 260 180 344a120 120 0 0 0 240 0c0-84-60-139-120-232Z" fill="#c51f35"/>
+<path d="M180 344c0 66 54 120 120 120 42 0 79-22 100-55-24 12-52 19-82 19-76 0-138-51-138-114 0-30 12-62 34-96-20 36-34 76-34 126Z" fill="#8f1427" opacity=".65"/>
+<rect x="540" y="176" width="300" height="128" rx="22" transform="rotate(-12 540 176)" fill="#fff" stroke="#c51f35" stroke-width="8"/>
+<rect x="650" y="140" width="82" height="200" rx="14" transform="rotate(-12 650 140)" fill="#f6b8ae"/>
+<path d="m1010 256 18 38 42 5-31 27 9 42-38-21-38 21 9-42-31-27 42-5Z" fill="#c51f35"/>
+<text x="540" y="410" fill="#8f1427" font-family="Arial, sans-serif" font-size="36" font-weight="700">Give the gift of life</text>
+</svg>

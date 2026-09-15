@@ -207,10 +207,13 @@ The desktop solution now includes:
 - Styled buttons, cards, forms, fields, links, ordered lists and the footer.
 - Hover, keyboard-focus and active-navigation states.
 - A keyboard-accessible “Skip to main content” link on every page.
+- A responsive hero image using a `picture` element, separate wide/mobile SVG assets, `srcset` and `sizes`.
 
 ## Responsive Design
 
 The layout uses relative spacing and a mobile breakpoint at `760px`. At smaller widths, the navigation becomes vertical, content sections use reduced spacing, cards switch to one column and headings scale down automatically. The forms use fluid widths and resizable text areas so they remain usable on phones and tablets.
+
+A second breakpoint between `761px` and `1024px` creates a two-column tablet card layout. The hero image uses the mobile asset below `760px`, while the wide asset is selected for larger screens. Both image variants use fluid width constraints so they scale without overflowing their containers.
 
 The site was checked at the following viewport sizes:
 
@@ -219,6 +222,14 @@ The site was checked at the following viewport sizes:
 | Desktop | 1440 × 900 | `evidence/desktop-home.png` |
 | Tablet | 768 × 1024 | `evidence/tablet-home.png` |
 | Mobile | 390 × 844 | `evidence/mobile-home.png` |
+
+### Screenshot Evidence
+
+![Desktop home page at 1440 by 900 pixels](evidence/desktop-home.png)
+
+![Tablet home page at 768 by 1024 pixels](evidence/tablet-home.png)
+
+![Mobile home page at 390 by 844 pixels](evidence/mobile-home.png)
 
 ## Part 2 Changelog
 
@@ -229,6 +240,8 @@ The site was checked at the following viewport sizes:
 | 15 September 2026 | Added responsive rules for screens below 760px. The navigation now stacks vertically, multi-column cards become a single column, and spacing and headings adapt to mobile widths. |
 | 15 September 2026 | Added a skip-navigation link and `aria-current="page"` to each page so keyboard and screen-reader users can identify the current page and reach the main content quickly. |
 | 15 September 2026 | Tested the shared stylesheet links and responsive breakpoint across all five pages and recorded desktop, tablet and mobile screenshot evidence. |
+| 15 September 2026 | Added separate wide and mobile hero illustrations with `picture`, `srcset`, `sizes`, intrinsic dimensions and descriptive alternative text to demonstrate responsive image handling. |
+| 15 September 2026 | Added a tablet breakpoint from 761px to 1024px, including a two-column card layout, and added an explicit button `:active` state for complete pseudo-class coverage. |
 
 ## References
 

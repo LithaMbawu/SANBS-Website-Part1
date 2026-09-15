@@ -44,6 +44,8 @@ nav a:hover, nav a[aria-current='page'] { border-bottom-color: #fff; }
 main { margin: 0 auto; max-width: 1180px; }
 section { padding: 4rem 6%; }
 .hero { background: linear-gradient(135deg, #fff 0%, #fff5e9 100%); padding: clamp(4rem, 9vw, 8rem) 10%; text-align: center; }
+.hero-image { display: block; margin: 0 auto 2rem; max-width: 760px; }
+.hero-image img { border-radius: 12px; display: block; height: auto; width: 100%; }
 .hero p { color: var(--muted); font-size: 1.15rem; margin: 0 auto 1.5rem; max-width: 680px; }
 .hero h1 { color: var(--red-dark); }
 .page-title { background: var(--ink); color: #fff; padding: 4rem 6%; }
@@ -56,6 +58,7 @@ section { padding: 4rem 6%; }
 .card a { font-family: 'Trebuchet MS', Arial, sans-serif; font-weight: 700; }
 .button { background: var(--red); border: 2px solid var(--red); border-radius: 4px; color: #fff; display: inline-block; font-family: 'Trebuchet MS', Arial, sans-serif; font-weight: 700; margin: 0.35rem; padding: 0.75rem 1.25rem; text-decoration: none; transition: background 160ms ease, transform 160ms ease; }
 .button:hover { background: var(--red-dark); border-color: var(--red-dark); transform: translateY(-2px); }
+.button:active { transform: translateY(0); }
 .secondary { background: transparent; color: var(--red-dark); }
 .secondary:hover { color: #fff; }
 ol { display: grid; gap: 0.8rem; padding-left: 1.5rem; }
@@ -77,6 +80,12 @@ footer p { margin-bottom: 0.4rem; }
 	.hero { padding: 4.5rem 7%; }
 	.cards { grid-template-columns: 1fr; }
 	.page-title { padding: 3rem 5%; }
+}
+
+@media (min-width: 761px) and (max-width: 1024px) {
+	section { padding-left: 5%; padding-right: 5%; }
+	.hero { padding-left: 7%; padding-right: 7%; }
+	.cards { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (prefers-reduced-motion: reduce) {
