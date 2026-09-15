@@ -54,6 +54,9 @@ section { padding: 4rem 6%; }
 .cards { display: grid; gap: 1.5rem; grid-template-columns: repeat(3, 1fr); }
 .card, form { background: var(--paper); border: 1px solid var(--line); border-radius: 6px; box-shadow: var(--shadow); padding: 1.7rem; }
 .card { border-top: 5px solid var(--red); }
+.image-cards .card { overflow: hidden; padding: 0 0 1.7rem; }
+.image-cards .card img { aspect-ratio: 1; display: block; height: auto; margin-bottom: 1.35rem; object-fit: cover; width: 100%; }
+.image-cards .card h3, .image-cards .card p, .image-cards .card a { margin-left: 1.7rem; margin-right: 1.7rem; }
 .card p { color: var(--muted); }
 .card address { color: var(--muted); font-style: normal; margin-bottom: 1rem; }
 .card a { font-family: 'Trebuchet MS', Arial, sans-serif; font-weight: 700; }
