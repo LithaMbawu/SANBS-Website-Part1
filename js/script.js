@@ -1,1 +1,1 @@
-// JavaScript file reserved for future interactive functionality.
+//Java ready
