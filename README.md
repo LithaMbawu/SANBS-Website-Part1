@@ -188,3 +188,51 @@ SANBS Website
     ├── Donor Locations
     ├── Map
     └── Contact Form
+
+---
+
+# Part 2 – CSS Styling and Responsive Design
+
+## Implementation Summary
+
+Part 2 applies a shared external stylesheet to all five HTML pages. The stylesheet is stored in `css/style.css` and is linked from `index.html`, `about.html`, `services.html`, `enquiry.html` and `contact.html`.
+
+The desktop solution now includes:
+
+- A CSS reset using `box-sizing`, consistent margins and a shared base font system.
+- CSS custom properties for the colour palette, borders, focus colour and shadows.
+- A consistent typography scale using relative units and `clamp()` for responsive headings.
+- A centred page structure using a maximum-width content container.
+- CSS Grid for the card layouts and Flexbox for the navigation.
+- Styled buttons, cards, forms, fields, links, ordered lists and the footer.
+- Hover, keyboard-focus and active-navigation states.
+- A keyboard-accessible “Skip to main content” link on every page.
+
+## Responsive Design
+
+The layout uses relative spacing and a mobile breakpoint at `760px`. At smaller widths, the navigation becomes vertical, content sections use reduced spacing, cards switch to one column and headings scale down automatically. The forms use fluid widths and resizable text areas so they remain usable on phones and tablets.
+
+The site was checked at the following viewport sizes:
+
+| Device category | Viewport | Evidence |
+| --- | --- | --- |
+| Desktop | 1440 × 900 | `evidence/desktop-home.png` |
+| Tablet | 768 × 1024 | `evidence/tablet-home.png` |
+| Mobile | 390 × 844 | `evidence/mobile-home.png` |
+
+## Part 2 Changelog
+
+| Date | Change |
+| --- | --- |
+| 15 September 2026 | Replaced the original compressed stylesheet with a structured external CSS system using custom properties, a reset, a defined colour palette, typography scale, Grid card layouts and Flexbox navigation. |
+| 15 September 2026 | Added desktop visual styling for the hero area, page headers, cards, buttons, forms, fields, ordered lists and footer. Added hover, active-link and visible keyboard-focus states. |
+| 15 September 2026 | Added responsive rules for screens below 760px. The navigation now stacks vertically, multi-column cards become a single column, and spacing and headings adapt to mobile widths. |
+| 15 September 2026 | Added a skip-navigation link and `aria-current="page"` to each page so keyboard and screen-reader users can identify the current page and reach the main content quickly. |
+| 15 September 2026 | Tested the shared stylesheet links and responsive breakpoint across all five pages and recorded desktop, tablet and mobile screenshot evidence. |
+
+## References
+
+- MDN Web Docs. (2026). *CSS media queries*. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries
+- MDN Web Docs. (2026). *CSS flexible box layout*. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout
+- MDN Web Docs. (2026). *CSS grid layout*. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout
+- MDN Web Docs. (2026). *Using media queries for accessibility*. https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion
