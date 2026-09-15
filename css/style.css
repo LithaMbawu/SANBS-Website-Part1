@@ -55,6 +55,7 @@ section { padding: 4rem 6%; }
 .card, form { background: var(--paper); border: 1px solid var(--line); border-radius: 6px; box-shadow: var(--shadow); padding: 1.7rem; }
 .card { border-top: 5px solid var(--red); }
 .card p { color: var(--muted); }
+.card address { color: var(--muted); font-style: normal; margin-bottom: 1rem; }
 .card a { font-family: 'Trebuchet MS', Arial, sans-serif; font-weight: 700; }
 .button { background: var(--red); border: 2px solid var(--red); border-radius: 4px; color: #fff; display: inline-block; font-family: 'Trebuchet MS', Arial, sans-serif; font-weight: 700; margin: 0.35rem; padding: 0.75rem 1.25rem; text-decoration: none; transition: background 160ms ease, transform 160ms ease; }
 .button:hover { background: var(--red-dark); border-color: var(--red-dark); transform: translateY(-2px); }
@@ -66,6 +67,9 @@ li::marker { color: var(--red); font-weight: 700; }
 label { display: block; font-family: 'Trebuchet MS', Arial, sans-serif; font-weight: 700; margin-top: 1rem; }
 input, select, textarea { background: #fffdfa; border: 1px solid #bcaea4; border-radius: 4px; font: inherit; margin-top: 0.35rem; padding: 0.75rem; width: 100%; }
 textarea { min-height: 9rem; resize: vertical; }
+fieldset { border: 0; margin: 0; padding: 0; }
+fieldset + fieldset { border-top: 1px solid var(--line); margin-top: 1.5rem; padding-top: 1rem; }
+legend { color: var(--red-dark); font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 1.2rem; font-weight: 700; padding: 0; }
 form .button { cursor: pointer; margin: 1.5rem 0 0; }
 footer { background: var(--ink); color: #fff; padding: 2.5rem 6%; text-align: center; }
 footer p { margin-bottom: 0.4rem; }
