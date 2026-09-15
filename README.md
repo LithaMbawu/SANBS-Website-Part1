@@ -235,6 +235,7 @@ The desktop solution now includes:
 - Hover, keyboard-focus and active-navigation states.
 - A keyboard-accessible “Skip to main content” link on every page.
 - A responsive hero image using a `picture` element, separate wide/mobile SVG assets, `srcset` and `sizes`.
+- Four provided blood-donation illustrations integrated into the Services page with descriptive alternative text, intrinsic dimensions and lazy loading.
 
 ## Responsive Design
 
@@ -270,6 +271,7 @@ The site was checked at the following viewport sizes:
 | 15 September 2026 | Added separate wide and mobile hero illustrations with `picture`, `srcset`, `sizes`, intrinsic dimensions and descriptive alternative text to demonstrate responsive image handling. |
 | 15 September 2026 | Added a tablet breakpoint from 761px to 1024px, including a two-column card layout, and added an explicit button `:active` state for complete pseudo-class coverage. |
 | 15 September 2026 | Responded to Part 1 feedback by expanding page content, improving the linked sitemap, adding semantic headings and landmarks, grouping form fields with `fieldset` and `legend`, and making contact telephone/email details functional. |
+| 15 September 2026 | Integrated the provided blood-cell, blood-bag, donor-support and community blood-drive images into the Services page. Added descriptive alt text, lazy loading, intrinsic dimensions and responsive card styling. |
 
 ## References
 
