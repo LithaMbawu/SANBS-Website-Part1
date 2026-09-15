@@ -189,6 +189,33 @@ SANBS Website
     ├── Map
     └── Contact Form
 
+## Detailed Sitemap
+
+| Page | Main content | User actions and links |
+| --- | --- | --- |
+| [Home](index.html) | SANBS introduction, blood donation purpose and ways to help | Learn about donation, view donor locations, or make an enquiry |
+| [About Us](about.html) | Organisation overview, purpose, vision, mission and audiences | Understand SANBS's role and the people it serves |
+| [Services](services.html) | Blood donation, blood products, donor centres, blood drives, process and eligibility | Read preparation guidance and donation steps |
+| [Enquiry](enquiry.html) | Personal details, enquiry type and message form | Submit a general, volunteer, sponsorship, blood-drive or partnership enquiry |
+| [Contact](contact.html) | Head office, donor-centre examples, telephone and email details | Call, email, review locations or send a general message |
+
+## Part 1 Feedback Corrections
+
+The following changes were made in response to the areas that received low marks in Part 1:
+
+| Part 1 feedback area | Correction made in Part 2 | Evidence |
+| --- | --- | --- |
+| Navigation menu complete, functional and user-friendly | Kept the same navigation menu on every page, added clear active-page indicators with `aria-current="page"`, visible hover/focus states, a mobile stacking layout and skip links for keyboard users. | All five HTML pages and `css/style.css` |
+| Content comprehensive and relevant | Expanded the home, About, Services, Enquiry and Contact content with SANBS purpose, mission, vision, donor preparation, blood products, donation steps, audience descriptions and contact actions. | All five HTML pages |
+| Content tags correct and well-structured | Added labelled sections, logical heading levels, `article` cards, a definition list for organisational facts, `fieldset` and `legend` for forms, `address` for locations, and functional telephone/email links. | `about.html`, `enquiry.html`, `contact.html` |
+| Content logically structured and easy to read | Reorganised each page into a page-title section followed by clearly named content sections, descriptive paragraphs, ordered process steps and scannable cards. | All five HTML pages |
+| Layout correct, complete and well-structured | Applied a shared Grid/Flexbox layout, consistent content widths, card structure, form styling, desktop/tablet/mobile breakpoints and responsive image constraints. | `css/style.css` |
+| HTML5 semantic elements used appropriately | Used `header`, `nav`, `main`, `section`, `article`, `footer`, `address`, `fieldset`, `legend`, `ol`, `dl`, `dt` and `dd` according to the type of content they contain. | All five HTML pages |
+| File and folder structure organised | Kept page documents at the root, shared styling in `css/style.css`, scripts in `js/script.js`, responsive assets in `images/` and test evidence in `evidence/`. | Repository structure |
+| Sitemap comprehensive and detailed | Added a linked sitemap table showing every page, its content areas, and the actions available to visitors. | This README |
+
+The commit-history requirement must be completed through Git with several descriptive commits. The recommended commit sequence is: `Improve semantic page content`, `Add responsive layout and image handling`, `Document Part 1 feedback corrections`, and `Add responsive screenshot evidence`.
+
 ---
 
 # Part 2 – CSS Styling and Responsive Design
@@ -242,6 +269,7 @@ The site was checked at the following viewport sizes:
 | 15 September 2026 | Tested the shared stylesheet links and responsive breakpoint across all five pages and recorded desktop, tablet and mobile screenshot evidence. |
 | 15 September 2026 | Added separate wide and mobile hero illustrations with `picture`, `srcset`, `sizes`, intrinsic dimensions and descriptive alternative text to demonstrate responsive image handling. |
 | 15 September 2026 | Added a tablet breakpoint from 761px to 1024px, including a two-column card layout, and added an explicit button `:active` state for complete pseudo-class coverage. |
+| 15 September 2026 | Responded to Part 1 feedback by expanding page content, improving the linked sitemap, adding semantic headings and landmarks, grouping form fields with `fieldset` and `legend`, and making contact telephone/email details functional. |
 
 ## References
 
