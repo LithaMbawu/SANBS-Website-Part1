@@ -23,17 +23,22 @@
 </header>
 <main id="main-content">
 <section class="page-title"><h1>Make an Enquiry</h1><p>Ask about volunteering, sponsorship, partnerships or organising a blood drive.</p></section>
-<section><form action="#" method="post">
-<!-- Required NPO enquiry options -->
+<section aria-labelledby="enquiry-heading"><h2 id="enquiry-heading">Tell Us How We Can Help</h2><p>Use this academic prototype form to describe your enquiry. Select the option that best matches the support you need.</p><form action="#" method="post">
+<fieldset>
+<legend>Your details</legend>
 <label for="name">Name</label><input id="name" name="name" type="text" required>
 <label for="surname">Surname</label><input id="surname" name="surname" type="text" required>
 <label for="email">Email Address</label><input id="email" name="email" type="email" required>
 <label for="phone">Contact Number</label><input id="phone" name="phone" type="tel">
+</fieldset>
+<fieldset>
+<legend>Enquiry details</legend>
 <label for="type">Enquiry Type</label>
 <select id="type" name="type" required>
 <option value="">Please select</option><option>General Enquiry</option><option>Volunteer</option><option>Sponsorship</option><option>Organise a Blood Drive</option><option>Partnership</option>
 </select>
 <label for="message">Message</label><textarea id="message" name="message" required></textarea>
+</fieldset>
 <button class="button" type="submit">Submit Enquiry</button>
 </form></section>
 </main>
