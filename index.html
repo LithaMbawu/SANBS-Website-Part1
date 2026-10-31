@@ -3,9 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="SANBS academic website prototype">
-<title>SANBS | Home</title>
+<meta name="description" content="Learn how to donate blood, find donor centres and support SANBS through volunteering, partnerships and community blood drives in South Africa.">
+<meta name="keywords" content="SANBS, blood donation South Africa, donor centre, volunteer blood drive, support blood donation">
+<meta name="author" content="Litha Mbawu">
+<title>SANBS | Blood Donation, Donor Centres and Community Support</title>
 <link rel="stylesheet" href="css/style.css">
+<script defer src="js/script.js"></script>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -28,7 +31,7 @@
 <img src="images/hero-blood-wide.svg" srcset="images/hero-blood-mobile.svg 700w, images/hero-blood-wide.svg 1200w" sizes="(max-width: 760px) 92vw, 760px" width="1200" height="520" alt="Illustration of a blood drop, bandage and heart symbol">
 </picture>
 <h1>Trusted to Save Lives</h1>
-<p>Learn about blood donation, blood products and how you can support the South African National Blood Service.</p>
+<p>Learn about safe blood donation, visit a donor centre, and support SANBS through volunteering, partnerships and community blood drives.</p>
 <a class="button" href="services.html">Learn About Donation</a>
 <a class="button secondary" href="enquiry.html">Get Involved</a>
 </section>
@@ -39,6 +42,25 @@
 <article class="card"><h3>Donate Blood</h3><p>Learn about donor eligibility, preparation and the steps involved in a safe blood donation.</p><a href="services.html">Learn More</a></article>
 <article class="card"><h3>Find a Donor Centre</h3><p>Use the contact page to review example donor-centre locations and plan where to get assistance.</p><a href="contact.html">View Locations</a></article>
 <article class="card"><h3>Get Involved</h3><p>Support the SANBS mission by enquiring about volunteering, sponsorship, partnerships or a community blood drive.</p><a href="enquiry.html">Make an Enquiry</a></article>
+</div>
+</section>
+<section class="info-panel" aria-labelledby="support-heading">
+<h2 id="support-heading">Support Options</h2>
+<div class="tabs" data-tabs>
+<button class="tab is-active" type="button" role="tab" aria-selected="true" aria-controls="panel-donate" id="tab-donate">Donate</button>
+<button class="tab" type="button" role="tab" aria-selected="false" aria-controls="panel-volunteer" id="tab-volunteer">Volunteer</button>
+<button class="tab" type="button" role="tab" aria-selected="false" aria-controls="panel-drive" id="tab-drive">Host a Drive</button>
+</div>
+<div class="tab-panels">
+<article class="tab-panel is-active" id="panel-donate" role="tabpanel" aria-labelledby="tab-donate">
+<p>Blood donation helps patients receiving treatment for cancer, surgery, trauma and chronic illness. Check your eligibility and book a donation visit.</p>
+</article>
+<article class="tab-panel" id="panel-volunteer" role="tabpanel" aria-labelledby="tab-volunteer" hidden>
+<p>Volunteers can support awareness campaigns, donor recruitment, community outreach and events that help SANBS reach more communities.</p>
+</article>
+<article class="tab-panel" id="panel-drive" role="tabpanel" aria-labelledby="tab-drive" hidden>
+<p>Schools, workplaces and community groups can host a blood drive to make blood donation accessible and encourage regular donors.</p>
+</article>
 </div>
 </section>
 </main>

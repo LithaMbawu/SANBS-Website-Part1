@@ -259,6 +259,58 @@ The site was checked at the following viewport sizes:
 
 ![Mobile home page at 390 by 844 pixels](evidence/mobile-home.png)
 
+---
+
+# Part 3 – JavaScript, SEO and Form Validation
+
+## Implementation Summary
+
+Part 3 adds the interactive functionality required by the project brief. The website now includes JavaScript-driven tabs, accordion content, a live service-search filter, a lightbox gallery, a Leaflet-powered donor-location map and custom form validation with AJAX-style submission feedback.
+
+The SEO work includes more detailed page titles and meta descriptions for each page, keyword tags, a `robots.txt` file to guide crawlers, and a `sitemap.xml` file so search engines can understand the website structure. These updates improve discoverability and clarity without changing the overall design intent.
+
+## Functional Enhancements
+
+- Tabs on the homepage help visitors move between donation, volunteering and community-drive actions.
+- An accordion on the services page answers common donor questions in an interactive format.
+- A search box filters the service cards dynamically to match the user’s query.
+- A lightbox gallery lets visitors open and view donation illustrations in a larger modal window.
+- A Leaflet map on the contact page highlights the SANBS location and adds a more engaging local-search element.
+- Input validation checks required fields, email format, phone format, message length and enquiry consent.
+- Form submissions show immediate user feedback and simulate an asynchronous submission flow using JavaScript.
+
+## SEO and Technical Improvements
+
+- Added descriptive metadata to the homepage, about page, services page, enquiry page and contact page.
+- Updated page titles to be clearer and more keywords-focused.
+- Added `robots.txt` and `sitemap.xml` files for crawling and indexing guidance.
+- Improved accessibility by preserving semantic labels, focus states and skip links while adding interactive states.
+
+## Changelog
+
+| Date | Edit | Details |
+| --- | --- | --- |
+| 2026-10-31 | Part 3 JavaScript enhancement | Added tabs, accordions, dynamic service filtering, lightbox gallery, and a Leaflet map to improve user interaction and page engagement. |
+| 2026-10-31 | Form validation update | Added custom validation to the contact and enquiry forms, including email, phone, message-length and required-field checks. |
+| 2026-10-31 | AJAX-style feedback | Forms now provide immediate success or error messages after submission to improve interaction quality. |
+| 2026-10-31 | SEO improvements | Added keyword-rich meta descriptions, page titles and SEO files (`robots.txt` and `sitemap.xml`). |
+| 2026-10-31 | Feedback corrections from Part 2 | Ensured the pages remain responsive, accessible and consistent while adding advanced JavaScript features without breaking the original design. |
+
+## References
+
+1. MDN Web Docs. (2025). JavaScript: Client-side validation. https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation
+2. MDN Web Docs. (2025). HTML forms. https://developer.mozilla.org/en-US/docs/Learn/Forms
+3. Leaflet. (2025). Leaflet: Interactive maps. https://leafletjs.com/
+4. OpenStreetMap. (2025). OpenStreetMap contributors. https://www.openstreetmap.org/
+5. South African National Blood Service. (2025). About SANBS. https://sanbs.org.za/
+6. W3C. (2025). W3C HTML validator and accessibility guidelines. https://www.w3.org/WAI/standards-guidelines/
+
+---
+
+## Notes for Submission
+
+This repository contains the updated website files, including the required JavaScript enhancement, SEO files and form validation work. The next step for a live deployment would be to connect this project to a GitHub Pages or Netlify project once the repository remote has been configured and connected to the publishing platform.
+
 ## Part 2 Changelog
 
 | Date | Change |

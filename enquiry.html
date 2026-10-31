@@ -3,9 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="SANBS academic website prototype">
-<title>SANBS | Enquiry</title>
+<meta name="description" content="Submit an enquiry to SANBS about volunteering, sponsorship, partnerships and community blood drives in South Africa.">
+<meta name="keywords" content="SANBS enquiry, volunteer blood donation, sponsor SANBS, blood drive enquiry, partnerships">
+<title>SANBS | Enquire About Volunteering, Sponsorship and Blood Drives</title>
 <link rel="stylesheet" href="css/style.css">
+<script defer src="js/script.js"></script>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -22,24 +24,24 @@
 </nav>
 </header>
 <main id="main-content">
-<section class="page-title"><h1>Make an Enquiry</h1><p>Ask about volunteering, sponsorship, partnerships or organising a blood drive.</p></section>
-<section aria-labelledby="enquiry-heading"><h2 id="enquiry-heading">Tell Us How We Can Help</h2><p>Use this academic prototype form to describe your enquiry. Select the option that best matches the support you need.</p><form action="#" method="post">
+<section class="page-title"><h1>Make an Enquiry</h1><p>Ask about volunteering, sponsorship, partnerships or how to organise a blood drive.</p></section>
+<section aria-labelledby="enquiry-heading"><h2 id="enquiry-heading">Tell Us How We Can Help</h2><p>Use this academic prototype form to describe your enquiry. Select the option that best matches the support you need.</p><form id="enquiry-form" action="https://jsonplaceholder.typicode.com/posts" method="post" novalidate>
 <fieldset>
 <legend>Your details</legend>
-<label for="name">Name</label><input id="name" name="name" type="text" required>
-<label for="surname">Surname</label><input id="surname" name="surname" type="text" required>
-<label for="email">Email Address</label><input id="email" name="email" type="email" required>
-<label for="phone">Contact Number</label><input id="phone" name="phone" type="tel">
+<div class="field-group"><label for="name">Name</label><input id="name" name="name" type="text" minlength="2" required aria-describedby="name-error"><span class="field-error" id="name-error"></span></div>
+<div class="field-group"><label for="surname">Surname</label><input id="surname" name="surname" type="text" minlength="2" required aria-describedby="surname-error"><span class="field-error" id="surname-error"></span></div>
+<div class="field-group"><label for="email">Email Address</label><input id="email" name="email" type="email" required aria-describedby="email-error"><span class="field-error" id="email-error"></span></div>
+<div class="field-group"><label for="phone">Contact Number</label><input id="phone" name="phone" type="tel" pattern="^[0-9+()\s-]{9,15}$" aria-describedby="phone-error"><span class="field-error" id="phone-error"></span></div>
 </fieldset>
 <fieldset>
 <legend>Enquiry details</legend>
-<label for="type">Enquiry Type</label>
-<select id="type" name="type" required>
-<option value="">Please select</option><option>General Enquiry</option><option>Volunteer</option><option>Sponsorship</option><option>Organise a Blood Drive</option><option>Partnership</option>
-</select>
-<label for="message">Message</label><textarea id="message" name="message" required></textarea>
+<div class="field-group"><label for="type">Enquiry Type</label><select id="type" name="type" required aria-describedby="type-error"><option value="">Please select</option><option>General Enquiry</option><option>Volunteer</option><option>Sponsorship</option><option>Organise a Blood Drive</option><option>Partnership</option></select><span class="field-error" id="type-error"></span></div>
+<div class="field-group"><label for="date">Preferred Contact Date</label><input id="date" name="date" type="date" aria-describedby="date-error"><span class="field-error" id="date-error"></span></div>
+<div class="field-group"><label for="message">Message</label><textarea id="message" name="message" minlength="15" required aria-describedby="message-error"></textarea><span class="field-error" id="message-error"></span></div>
+<div class="checkbox-row"><input id="consent" name="consent" type="checkbox" required aria-describedby="consent-error"><label for="consent">I agree to be contacted about this enquiry.</label><span class="field-error" id="consent-error"></span></div>
 </fieldset>
 <button class="button" type="submit">Submit Enquiry</button>
+<div id="enquiry-feedback" class="form-feedback" aria-live="polite"></div>
 </form></section>
 </main>
 <footer>

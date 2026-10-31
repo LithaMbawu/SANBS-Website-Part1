@@ -3,9 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="SANBS academic website prototype">
-<title>SANBS | Contact</title>
+<meta name="description" content="Contact SANBS for donor centre information, general enquiries and support for blood donation services in South Africa.">
+<meta name="keywords" content="SANBS contact, donor centre South Africa, blood donation enquiry, support SANBS">
+<title>SANBS | Contact and Donor Centre Information</title>
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script defer src="js/script.js"></script>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -22,17 +26,21 @@
 </nav>
 </header>
 <main id="main-content">
-<section class="page-title"><h1>Contact SANBS</h1><p>Contact information and multiple locations for the website prototype.</p></section>
+<section class="page-title"><h1>Contact SANBS</h1><p>Contact information and donor-centre details for blood donation support and general enquiries.</p></section>
 <section aria-labelledby="locations-heading"><h2 id="locations-heading">Contact and Donor Locations</h2><div class="cards">
 <article class="card"><h3>SANBS Head Office</h3><address>1 Constantia Boulevard<br>Roodepoort, 1715</address><p><strong>Telephone:</strong> <a href="tel:+27117619000">011 761 9000</a><br><strong>Toll-free:</strong> 0800 11 9031<br><strong>Email:</strong> <a href="mailto:customerservice@sanbs.org.za">customerservice@sanbs.org.za</a></p></article>
 <article class="card"><h3>Greenstone Donor Centre</h3><address>Greenstone Shopping Centre<br>Johannesburg, Gauteng</address><p>Check the official SANBS donor-centre listing for current opening hours and appointment information.</p></article>
 <article class="card"><h3>Durban Donor Centre</h3><address>KwaZulu-Natal</address><p>Check the official SANBS donor-centre listing for the current address, opening hours and donation requirements.</p></article>
 </div></section>
-<section aria-labelledby="contact-form-heading"><h2 id="contact-form-heading">Contact Form</h2><p>Send a general message to the prototype contact team. For volunteering, sponsorship or blood drives, use the dedicated enquiry form.</p><form action="#" method="post">
-<label for="cname">Name</label><input id="cname" name="name" type="text" required>
-<label for="cemail">Email</label><input id="cemail" name="email" type="email" required>
-<label for="cmessage">Message</label><textarea id="cmessage" name="message" required></textarea>
+<section aria-labelledby="map-heading"><h2 id="map-heading">Find a SANBS Location</h2><div id="map" class="map" aria-label="Map showing SANBS community donation locations"></div></section>
+<section aria-labelledby="contact-form-heading"><h2 id="contact-form-heading">Contact Form</h2><p>Send a general message to the prototype contact team. For volunteering, sponsorship or blood drives, use the dedicated enquiry form.</p><form id="contact-form" action="https://jsonplaceholder.typicode.com/posts" method="post" novalidate>
+<div class="field-group"><label for="cname">Name</label><input id="cname" name="name" type="text" minlength="2" required aria-describedby="cname-error"><span class="field-error" id="cname-error"></span></div>
+<div class="field-group"><label for="cemail">Email</label><input id="cemail" name="email" type="email" required aria-describedby="cemail-error"><span class="field-error" id="cemail-error"></span></div>
+<div class="field-group"><label for="cphone">Phone Number</label><input id="cphone" name="phone" type="tel" pattern="^[0-9+()\s-]{9,15}$" aria-describedby="cphone-error"><span class="field-error" id="cphone-error"></span></div>
+<div class="field-group"><label for="csubject">Subject</label><input id="csubject" name="subject" type="text" minlength="3" required aria-describedby="csubject-error"><span class="field-error" id="csubject-error"></span></div>
+<div class="field-group"><label for="cmessage">Message</label><textarea id="cmessage" name="message" minlength="15" required aria-describedby="cmessage-error"></textarea><span class="field-error" id="cmessage-error"></span></div>
 <button class="button" type="submit">Send Message</button>
+<div id="contact-feedback" class="form-feedback" aria-live="polite"></div>
 </form></section>
 </main>
 <footer>
