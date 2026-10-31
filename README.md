@@ -307,6 +307,19 @@ The SEO work includes more detailed page titles and meta descriptions for each p
 
 ---
 
+## 10 Improvement Commit Set
+
+1. Reviewed the project structure and aligned all five pages with the Part 3 brief.
+2. Improved homepage messaging and added stronger donor-support calls to action.
+3. Refined the visual hierarchy with a clearer layout and stronger content emphasis.
+4. Polished the responsive design for desktop, tablet and mobile layouts.
+5. Added sticky navigation and smoother scrolling behaviour for better usability.
+6. Added tabbed content to present donation, volunteering and community-drive information clearly.
+7. Added an FAQ accordion and dynamic service search to improve information discovery.
+8. Added a gallery lightbox to let users view images in a larger format.
+9. Integrated an interactive map and improved location-based user support.
+10. Completed final form validation, submission feedback, SEO metadata and README documentation improvements.
+
 ## Notes for Submission
 
 This repository contains the updated website files, including the required JavaScript enhancement, SEO files and form validation work. The next step for a live deployment would be to connect this project to a GitHub Pages or Netlify project once the repository remote has been configured and connected to the publishing platform.

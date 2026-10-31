@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  initBackToTop();
   initTabs();
   initAccordion();
   initServiceSearch();
@@ -6,6 +7,29 @@ document.addEventListener('DOMContentLoaded', () => {
   initMap();
   initForms();
 });
+
+function initBackToTop() {
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.className = 'back-to-top';
+  button.textContent = 'Back to top';
+  button.setAttribute('aria-label', 'Back to top');
+  document.body.appendChild(button);
+
+  const toggleButton = () => {
+    if (window.scrollY > 260) {
+      button.classList.add('visible');
+    } else {
+      button.classList.remove('visible');
+    }
+  };
+
+  toggleButton();
+  window.addEventListener('scroll', toggleButton);
+  button.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
 
 function initTabs() {
   const tabGroup = document.querySelector('[data-tabs]');
