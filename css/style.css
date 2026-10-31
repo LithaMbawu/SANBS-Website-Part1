@@ -74,6 +74,17 @@ section { padding: 4rem 6%; }
 .button:active { transform: translateY(0); }
 .secondary { background: transparent; color: var(--red-dark); }
 .secondary:hover { color: #fff; }
+.contact-action-bar { background: var(--ink); display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin: 0 auto; max-width: 1180px; padding: 1rem 1.5rem 0; }
+.contact-action-bar a { background: #fff; border-radius: 999px; color: var(--red-dark); font-family: 'Trebuchet MS', Arial, sans-serif; font-weight: 700; padding: 0.8rem 1.2rem; text-decoration: none; }
+.benefit-section { background: #fff; }
+.benefit-grid { display: grid; gap: 1.5rem; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.benefit-card { background: #fffaf7; border: 1px solid var(--line); border-radius: 10px; padding: 1.5rem; }
+.checklist-box { background: #fffaf5; border: 1px solid var(--line); border-radius: 10px; margin-top: 1.5rem; padding: 1.5rem; }
+.checklist { list-style: none; padding-left: 0; }
+.checklist li { margin-bottom: 0.75rem; padding-left: 1.7rem; position: relative; }
+.checklist li::before { content: '✓'; color: var(--success); font-weight: 700; left: 0; position: absolute; }
+.reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.5s ease, transform 0.5s ease; }
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
 ol { display: grid; gap: 0.8rem; padding-left: 1.5rem; }
 li::marker { color: var(--red); font-weight: 700; }
 label { display: block; font-family: 'Trebuchet MS', Arial, sans-serif; font-weight: 700; margin-top: 1rem; }
