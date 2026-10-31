@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  initRevealAnimations();
   initBackToTop();
   initTabs();
   initAccordion();
@@ -7,6 +8,21 @@ document.addEventListener('DOMContentLoaded', () => {
   initMap();
   initForms();
 });
+
+function initRevealAnimations() {
+  const revealElements = document.querySelectorAll('.reveal');
+  if (!revealElements.length) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+      }
+    });
+  }, { threshold: 0.15 });
+
+  revealElements.forEach((element) => observer.observe(element));
+}
 
 function initBackToTop() {
   const button = document.createElement('button');
