@@ -327,6 +327,16 @@ The SEO work includes more detailed page titles and meta descriptions for each p
 - Added a donation preparation checklist to improve service usefulness and donor guidance.
 - Added subtle reveal animations to make the page feel more polished and interactive without overwhelming the user.
 
+## Lecturer Feedback Recorded
+
+The lecturer feedback for this project was:
+
+"You have demonstrated good understanding of web development. Your styling is good with all aspects covered. Ensure that your submission is in the correct format as you only submitted a link with no website files."
+
+## Submission Correction
+
+This project was corrected to ensure it is submitted in the proper format. The website includes the full project files in the repository rather than only a link. The final submission should include the HTML, CSS, JavaScript, images and documentation files in the project folder or zip package.
+
 ## Notes for Submission
 
 This repository contains the updated website files, including the required JavaScript enhancement, SEO files and form validation work. The next step for a live deployment would be to connect this project to a GitHub Pages or Netlify project once the repository remote has been configured and connected to the publishing platform.
